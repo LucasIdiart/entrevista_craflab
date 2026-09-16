@@ -31,7 +31,7 @@ seed()
 
 app = FastAPI()
 
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods= ["*"], allow_headers=["*"])
+app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173"], allow_methods= ["*"], allow_headers=["*"])
 
 def get_db():
     db = SessionLocal()
